@@ -38,10 +38,10 @@
             <a class="navbar-brand" rel="home" title="Energy Profiles App">Energy Profiles App</a>
           </div>
           <div class="navbar-header col-md-2">
-            <a class="navbar-brand" rel="home" title="Login" href="/login">Login</a>
+            <a class="navbar-brand" rel="home" title="Login" href="/energy/#/login">Login</a>
           </div>
            <div class="navbar-header col-md-2">
-            <a class="navbar-brand" rel="home" title="Sign Up" href="/signup">Sign Up</a>
+            <a class="navbar-brand" rel="home" title="Sign Up" href="/energy/#/signup">Sign Up</a>
           </div>
         </div>
       </div>

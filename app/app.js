@@ -2,13 +2,13 @@ var app = angular.module('myApp', ['ngRoute', 'ngAnimate', 'toaster']);
 
 app.config(['$routeProvider',
   function ($routeProvider) {
-        $routeProvider.
-            when('/', {
+        $routeProvider
+            .when('/', {
                 title: 'Home',
                 templateUrl: 'partials/home.html',
                 controller: 'homeCtrl'
             })
-            when('/login', {
+            .when('/login', {
                 title: 'Login',
                 templateUrl: 'partials/login.html',
                 controller: 'authCtrl'
