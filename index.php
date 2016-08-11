@@ -7,7 +7,9 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
           <title>Energy Profiles App</title>
           <!-- Bootstrap -->
-          <link href="css/bootstrap.min.css" rel="stylesheet">
+          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             <link href="css/custom.css" rel="stylesheet">
               <link href="css/toaster.css" rel="stylesheet">
                 <style>
@@ -25,27 +27,28 @@
               </head>
 
   <body ng-cloak="">
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="row">
-          <div class="navbar-header col-md-8">
-            <button type="button" class="navbar-toggle" toggle="collapse" target=".navbar-ex1-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" rel="home" title="Energy Profiles App">Energy Profiles App</a>
-          </div>
-          <div class="navbar-header col-md-2">
-            <a class="navbar-brand" rel="home" title="Login" href="/energy/#/login">Login</a>
-          </div>
-           <div class="navbar-header col-md-2">
-            <a class="navbar-brand" rel="home" title="Sign Up" href="/energy/#/signup">Sign Up</a>
-          </div>
-        </div>
-      </div>
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/energy/#/">Energy Profiles App</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/energy/#/">Home</a></li>
+        <li><a href="/energy/#/dashboard">Dashboard</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/energy/#/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="/energy/#/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
     <div >
       <div class="container" style="margin-top:20px;">
 

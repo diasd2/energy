@@ -5,8 +5,7 @@ app.config(['$routeProvider',
         $routeProvider
             .when('/', {
                 title: 'Home',
-                templateUrl: 'partials/home.html',
-                controller: 'homeCtrl'
+                templateUrl: 'partials/home.html'
             })
             .when('/login', {
                 title: 'Login',
