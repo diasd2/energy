@@ -16,11 +16,4 @@ CREATE TABLE IF NOT EXISTS `users` (
   `city` varchar(50) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`uid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=187 ;
-
---
--- Dumping data for table `customers_auth`
---
-
-INSERT INTO `users` (`uid`, `name`, `email`, `phone`, `password`, `address`, `city`, `created`) VALUES 
-(178, 'Energy Administrator', 'admin@energy.com', '0000000000', '$2a$10$72442f3d7ad44bcf1432cuAAZAURj9dtXhEMBQXMn9C8SpnZjmK1S', 'Porto', '', '2014-08-31 21:00:26');
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=187;

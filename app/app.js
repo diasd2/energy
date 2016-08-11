@@ -3,11 +3,16 @@ var app = angular.module('myApp', ['ngRoute', 'ngAnimate', 'toaster']);
 app.config(['$routeProvider',
   function ($routeProvider) {
         $routeProvider.
-        when('/login', {
-            title: 'Login',
-            templateUrl: 'partials/login.html',
-            controller: 'authCtrl'
-        })
+            when('/', {
+                title: 'Home',
+                templateUrl: 'partials/home.html',
+                controller: 'homeCtrl'
+            })
+            when('/login', {
+                title: 'Login',
+                templateUrl: 'partials/login.html',
+                controller: 'authCtrl'
+            })
             .when('/logout', {
                 title: 'Logout',
                 templateUrl: 'partials/login.html',
@@ -23,14 +28,8 @@ app.config(['$routeProvider',
                 templateUrl: 'partials/dashboard.html',
                 controller: 'authCtrl'
             })
-            .when('/', {
-                title: 'Login',
-                templateUrl: 'partials/login.html',
-                controller: 'authCtrl',
-                role: '0'
-            })
             .otherwise({
-                redirectTo: '/login'
+                redirectTo: '/'
             });
   }])
     .run(function ($rootScope, $location, Data) {
@@ -47,7 +46,7 @@ app.config(['$routeProvider',
                     if (nextUrl == '/signup' || nextUrl == '/login') {
 
                     } else {
-                        $location.path("/login");
+                        $location.path("/");
                     }
                 }
             });
