@@ -1,0 +1,117 @@
+{
+    "tv": {
+        "1": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        },
+
+        "2": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        }
+    },
+
+    "washMachines": {
+        "1": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        },
+
+        "2": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        }
+    },
+
+    "dryMachines": {
+        "1": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        },
+
+        "2": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        }
+    },
+
+    "lights": {
+
+    },
+
+    "stereo": {
+        "1": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        },
+
+        "2": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        }
+    },
+
+    "gameingConsole": {
+        "1": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        },
+
+        "2": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        }
+    },
+
+    "computer": {
+        "1": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        },
+
+        "2": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        }
+    },
+
+    "coolingHeating": {
+        "1": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        },
+
+        "2": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        }
+    },
+
+    "kitchen": {
+        "1": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        },
+
+        "2": {
+            "name": "",
+            "power": "",
+            "idlePower": ""
+        }
+    }
+}
