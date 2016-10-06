@@ -28,7 +28,7 @@ app.config(['$routeProvider',
                 controller: 'dashCtrl'
             })
             .when('/profiles', {
-                title: 'Dashboard',
+                title: 'Profiles',
                 templateUrl: 'partials/profiles.html',
                 controller: 'profilesCtrl'
             })

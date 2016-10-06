@@ -70,5 +70,6 @@
 <script src="app/directives.js"></script>
 <script src="app/authCtrl.js"></script>
 <script src="app/dashCtrl.js"></script>
+<script src="app/profilesCtrl.js"></script>
 </html>
 
