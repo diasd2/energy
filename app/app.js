@@ -27,6 +27,11 @@ app.config(['$routeProvider',
                 templateUrl: 'partials/dashboard.html',
                 controller: 'dashCtrl'
             })
+            .when('/profiles', {
+                title: 'Dashboard',
+                templateUrl: 'partials/profiles.html',
+                controller: 'profilesCtrl'
+            })
             .otherwise({
                 redirectTo: '/'
             });

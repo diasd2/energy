@@ -1,5 +1,5 @@
-app.controller('dashCtrl', function ($scope, $rootScope) {
-    //initially set those objects to null to avoid undefined error
+app.controller('dashCtrl', function ($scope, $rootScope, $location, Data) {
+
     $scope.generateChart = function () {
         // Load the Visualization API and the corechart package.
         google.charts.load('current', {'packages':['corechart']});
@@ -32,5 +32,12 @@ app.controller('dashCtrl', function ($scope, $rootScope) {
             var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
             chart.draw(data, options);
         }
+    };
+
+    $scope.logout = function () {
+        Data.get('logout').then(function (results) {
+            Data.toast(results);
+            $location.path('');
+        });
     }
 });
