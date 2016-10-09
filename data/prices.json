@@ -1,0 +1,21 @@
+{
+    "edp": {
+        "pontas": {
+            "simples": 28.5,
+            "bi": 23.5,
+            "tri": 1.63
+        },
+
+        "cheias": {
+            "simples": 28.5,
+            "bi": 23.5,
+            "tri": 1.63
+        },
+
+        "vazio": {
+            "simples": 28.5,
+            "bi": 23.5,
+            "tri": 1.63
+        }
+    }
+}

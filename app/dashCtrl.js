@@ -1,10 +1,9 @@
 app.controller('dashCtrl', function ($scope, $rootScope, $location, Data) {
 
     $scope.generateChart = function () {
-        // Load the Visualization API and the corechart package.
-        google.charts.load('current', {'packages':['corechart']});
-
         // Set a callback to run when the Google Visualization API is loaded.
+        // Load the Visualization API and the corechart package.
+        google.charts.load('visualization', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawChart);
 
         // Callback that creates and populates a data table,

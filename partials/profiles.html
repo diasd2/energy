@@ -1,3 +1,169 @@
-<div class="page-content" ng-if="uid">
-    Teste
+<div class="page-content" ng-if="authenticated">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img src="../energy/images/ciclos.png" class="img-thumbnail" alt="" width="731" height="379">
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <input type="button" class="btn btn-info" value="Mostrar Resultados" ng-click="createProfileChart()">
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div id="chart_profile_div" class="col-md-12 text-center"></div>
+        </div>
+        <div class="col-sm-4">
+            <ul class="list-group">
+                <li class="list-group-item">Hábitos de consumo <span class="badge">Intensivos</span></li>
+                <li class="list-group-item">Tipo de tarifa <span class="badge">Bi-Horária</span></li>
+                <li class="list-group-item">Consumo horas de vazio (kWh) <span class="badge">1600</span></li>
+                <li class="list-group-item">Consumo horas fora de vazio (kWh) <span class="badge">2400</span></li>
+                <li class="list-group-item">Consumo medido <span class="badge">1 ano</span></li>
+                <li class="list-group-item">Potência contratada (kVA) <span class="badge">6.9</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="row text-center">
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th class="text-center">#</th>
+                        <th class="text-center">Plano</th>
+                        <th class="text-center">Detalhes</th>
+                        <th class="text-center">Custo (estimado)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- first result -->
+                    <tr>
+                        <td rowspan="3">
+                            <div class="col-md-12 text-center">
+                                <img src="../energy/images/suppliers/energiasimples.png" class="img-thumbnail" alt="">
+                            </div>
+                        </td>
+                        <td>Energia Simples - ENERGIA SIMPLES Plano Base Online (bi horária)</td>
+                        <td rowspan="2">
+                            Fidelização: não <br/>
+                            Adesão: somente online <br/>
+                            Fatura eletrónica: obrigatória <br/>
+                            Débito direto: obrigatório
+                        </td>
+                        <td>€ 914,31/ano</td>
+                    </tr>
+                    <tr>
+                        <td>Energia Simples - ENERGIA SIMPLES Plano Base Online (simples)</td>
+                        <td>€ 925,82/ano</td>
+                    </tr>
+                    <tr>
+                        <td>Energia Simples - ENERGIA SIMPLES Plano Base (bi horária)</td>
+                        <td>
+                            Fidelização: não <br/>
+                            Adesão: somente online <br/>
+                            Fatura eletrónica: opcional <br/>
+                            Débito direto: opcional
+                        </td>
+                        <td>€ 935,59/ano</td>
+                    </tr>
+                    <!-- second result -->
+                    <tr>
+                        <td rowspan="2">
+                            <div class="col-md-12 text-center">
+                                <img src="../energy/images/suppliers/ylce.png" class="img-thumbnail" alt="">
+                            </div>
+                        </td>
+                        <td>Ylce - YLCE (bi horária)</td>
+                        <td rowspan="2">
+                            Fidelização: não <br/>
+                            Adesão: somente online <br/>
+                            Fatura eletrónica: obrigatória <br/>
+                            Débito direto: obrigatório
+                        </td>
+                        <td>€ 918,71/ano</td>
+                    </tr>
+                    <tr>
+                        <td>Ylce - YLCE (simples)</td>
+                        <td>€ 924,31/ano</td>
+                    </tr>
+                    <!-- third result -->
+                    <tr>
+                        <td rowspan="2">
+                            <div class="col-md-12 text-center">
+                                <img src="../energy/images/suppliers/luzboa.png" class="img-thumbnail" alt="">
+                            </div>
+                        </td>
+                        <td>Luzboa - LUZBOA (bi horária)</td>
+                        <td rowspan="2">
+                            Fidelização: não <br/>
+                            Adesão: somente online <br/>
+                            Fatura eletrónica: obrigatória <br/>
+                            Débito direto: obrigatório
+                        </td>
+                        <td>€ 922,28/ano</td>
+                    </tr>
+                    <tr>
+                        <td>Luzboa - LUZBOA Indexado 50/50 (bi horária)</td>
+                        <td>€ 930,84/ano</td>
+                    </tr>
+                    <tr>
+                        <td>Luzboa - LUZBOA Geral (bi horária)</td>
+                        <td rowspan="2">
+                            Fidelização: não <br/>
+                            Adesão: somente online <br/>
+                            Fatura eletrónica: opcional <br/>
+                            Débito direto: opcional
+                        </td>
+                        <td>€ 938,07/ano</td>
+                    </tr>
+                    <!-- fourth result -->
+                    <tr>
+                        <td>
+                            <div class="col-md-12 text-center">
+                                <img src="../energy/images/suppliers/endesa.png" class="img-thumbnail" alt="">
+                            </div>
+                        </td>
+                        <td>Endesa - ENDESA e- Luz (simples)</td>
+                        <td>
+                            Fidelização: não <br/>
+                            Adesão: somente online <br/>
+                            Fatura eletrónica: obrigatória <br/>
+                            Débito direto: obrigatório
+                        </td>
+                        <td>€ 933,35/ano</td>
+                    </tr>
+                    <!-- fifth result -->
+                    <tr>
+                        <td>
+                            <div class="col-md-12 text-center">
+                                <img src="../energy/images/suppliers/iberdrola.png" class="img-thumbnail" alt="">
+                            </div>
+                        </td>
+                        <td>Iberdrola - IBERDROLA Plano Casa Conect@ (simples)</td>
+                        <td>
+                            Fidelização: não <br/>
+                            Adesão: somente online <br/>
+                            Fatura eletrónica: opcional <br/>
+                            Débito direto: obrigatório
+                        </td>
+                        <td>€ 937,05/ano</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
