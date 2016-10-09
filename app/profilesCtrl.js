@@ -1,6 +1,14 @@
 app.controller('profilesCtrl', function ($scope, $rootScope) {
 
-    $scope.createProfileChart = function () {
+    $scope.createProfileData = function () {
+        generateChartForProfile();
+
+        //set visibility to display="block"
+        document.getElementById('profile_eval1').style.display = "block";
+        document.getElementById('profile_eval2').style.display = "block";
+    };
+
+    function generateChartForProfile() {
         // Load the Visualization API and the corechart package.
         google.charts.load('visualization', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawProfileVisualization);
@@ -30,12 +38,12 @@ app.controller('profilesCtrl', function ($scope, $rootScope) {
                 hAxis: {title: 'Mês'},
                 seriesType: 'bars',
                 series: {4: {type: 'line'}},
-                'width': 800,
+                'width': 750,
                 'height': 500
             };
 
             var chart = new google.visualization.ComboChart(document.getElementById('chart_profile_div'));
             chart.draw(data, options);
         }
-    };
+    }
 });

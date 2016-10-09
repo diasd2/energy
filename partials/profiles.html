@@ -10,19 +10,19 @@
 
     <div class="row">
         <div class="col-md-12 text-center">
-            <input type="button" class="btn btn-info" value="Mostrar Resultados" ng-click="createProfileChart()">
+            <input type="button" class="btn btn-info" value="Mostrar Resultados" ng-click="createProfileData()">
         </div>
     </div>
 
     <br/>
     <br/>
 
-    <div class="row">
+    <div id="profile_eval1" class="row" style="display: none;">
         <div class="col-sm-8">
             <div id="chart_profile_div" class="col-md-12 text-center"></div>
         </div>
-        <div class="col-sm-4">
-            <ul class="list-group">
+        <div class="col-sm-4" style="height: 500px;">
+            <ul class="list-group" style="position: relative; top: 28%;">
                 <li class="list-group-item">Hábitos de consumo <span class="badge">Intensivos</span></li>
                 <li class="list-group-item">Tipo de tarifa <span class="badge">Bi-Horária</span></li>
                 <li class="list-group-item">Consumo horas de vazio (kWh) <span class="badge">1600</span></li>
@@ -36,7 +36,7 @@
     <br/>
     <br/>
 
-    <div class="row text-center">
+    <div id="profile_eval2" class="row text-center" style="display: none;">
         <div class="container">
             <div class="table-responsive">
                 <table class="table table-bordered">
@@ -101,7 +101,7 @@
                     </tr>
                     <!-- third result -->
                     <tr>
-                        <td rowspan="2">
+                        <td rowspan="3">
                             <div class="col-md-12 text-center">
                                 <img src="../energy/images/suppliers/luzboa.png" class="img-thumbnail" alt="">
                             </div>
@@ -121,7 +121,7 @@
                     </tr>
                     <tr>
                         <td>Luzboa - LUZBOA Geral (bi horária)</td>
-                        <td rowspan="2">
+                        <td>
                             Fidelização: não <br/>
                             Adesão: somente online <br/>
                             Fatura eletrónica: opcional <br/>
@@ -160,6 +160,54 @@
                             Débito direto: obrigatório
                         </td>
                         <td>€ 937,05/ano</td>
+                    </tr>
+                    <!-- sixth result -->
+                    <tr>
+                        <td>
+                            <div class="col-md-12 text-center">
+                                <img src="../energy/images/suppliers/edpsu.png" class="img-thumbnail" alt="">
+                            </div>
+                        </td>
+                        <td>EDP SU - EDP Serviço Universal (bi horária)</td>
+                        <td>
+                            Fidelização: não <br/>
+                            Adesão: balcão, online <br/>
+                            Fatura eletrónica: opcional <br/>
+                            Débito direto: opcional
+                        </td>
+                        <td>€ 938,14/ano</td>
+                    </tr>
+                    <!-- seventh result -->
+                    <tr>
+                        <td>
+                            <div class="col-md-12 text-center">
+                                <img src="../energy/images/suppliers/enat.png" class="img-thumbnail" alt="">
+                            </div>
+                        </td>
+                        <td>Enat - ENAT Penta (bi horária)</td>
+                        <td>
+                            Fidelização: não <br/>
+                            Adesão: balcão, online <br/>
+                            Fatura eletrónica: obrigatória <br/>
+                            Débito direto: obrigatório
+                        </td>
+                        <td>€ 942,18/ano</td>
+                    </tr>
+                    <!-- eight result -->
+                    <tr>
+                        <td>
+                            <div class="col-md-12 text-center">
+                                <img src="../energy/images/suppliers/goldenergy.png" class="img-thumbnail" alt="">
+                            </div>
+                        </td>
+                        <td>Goldenergy - GOLDENERGY Monoelétrico (bi horária)</td>
+                        <td>
+                            Fidelização: não <br/>
+                            Adesão: balcão, online <br/>
+                            Fatura eletrónica: opcional <br/>
+                            Débito direto: opcional
+                        </td>
+                        <td>€ 944,49/ano</td>
                     </tr>
                     </tbody>
                 </table>
