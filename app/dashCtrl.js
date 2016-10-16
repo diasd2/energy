@@ -1,6 +1,17 @@
 app.controller('dashCtrl', function ($scope, $rootScope, $location, Data) {
 
-    $scope.generateChart = function () {
+    $scope.simulateResults = function () {
+        var popupData = prompt("Por favor introduza o número de pessoas na habitação?", "1");
+
+        if (popupData != null) {
+            generateChart();
+
+            //set visibility to display="block"
+            document.getElementById('simResults').style.display = "block";
+        }
+    };
+
+    function generateChart () {
         // Set a callback to run when the Google Visualization API is loaded.
         // Load the Visualization API and the corechart package.
         google.charts.load('visualization', {'packages':['corechart']});
@@ -31,7 +42,7 @@ app.controller('dashCtrl', function ($scope, $rootScope, $location, Data) {
             var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
             chart.draw(data, options);
         }
-    };
+    }
     
     $scope.printResults = function () {
         var divContents = $("#simResults").html();

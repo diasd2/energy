@@ -71,3 +71,7 @@ padding-bottom: 10px;*/
 .form-group-addon{
 	padding-left: -20px;
 }
+
+#chart_div > div > div {
+    margin: 0 auto;
+}
